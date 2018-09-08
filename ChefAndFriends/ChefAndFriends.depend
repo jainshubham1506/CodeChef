@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1528558678 source:/media/shubham/Files/CodeChef/ChefAndFriends/main.cpp
+	<cmath>
+	<cstdio>
+	<vector>
+	<iostream>
+	<algorithm>
+	<stack>
+	<queue>
+
