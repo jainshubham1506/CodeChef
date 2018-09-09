@@ -8,27 +8,32 @@ int main(){
     while(t--){
     int length;
     cin>>length;
-    char arr[length];
+    char arr[length+1];
     for(int i=0;i<length;i++){
         cin>>arr[i];
     }
     int i=0;int j=1;
-    while(j<length){
-        char c=arr[i];
-        arr[i]=arr[j];
-        arr[j]=c;
-        i=i+2;
-        j=j+2;
-    }
+     while(j<length){
+         char c=arr[i];
+         arr[i]=arr[j];
+         arr[j]=c;
+         i=i+2;
+         j=j+2;
+     }
+   
     for(int k=0;k<length;k++){
-        int count=0;
-        while(arr[k]!=alphabet[count]){
-                ++count;
-        }
-        arr[k]=alphabet[25-count];
+        // int count=0;
+        // while(arr[k]!=alphabet[count]){
+        //         ++count;
+        // }
+        //arr[k]=alphabet[25-count];
+        arr[k] = 'z' - (arr[k] - 'a');
     }
     for(int l=0;l<length;l++){
         cout<<arr[l];
     }
+   
+    cout<<"\n";
     }
+    cout<<"\n";
 }
